@@ -1,12 +1,14 @@
 <html> <head>
      <title>Primeira atividade de Comp  Grafica </title>
 </head> <body>
-    <!-- esses dados sao do mes 4 do ano de 2020 referente as mortes diarias na bahia obtidos no site da fiocruz https://bigdata-covid19.icict.fiocruz.br/
-    no eixo x estao os dias do mes com aumento da escala (x10), e no eixo y os dados foram subtraidos de 400 que é a altura (400- y) -->
-<svg width="400" height="420"> 
-    <text x="0" y="60">Gráfico de Mortes Diarias do Mes de Maio de 2020  </text>
-    <line x1="0" y1="400" x2="400" y2="400" style="stroke:rgb(0, 0, 0)"/> <!-- eixo x-->
-    <line x1="0" y1="400" x2="00" y2="100" style="stroke:black"  /> <!-- eixo y-->
+   
+<svg width="400" height="420">  <!--Tamanho da box do grafico -->
+    <text x="0" y="60">Gráfico de Mortes Diarias do Mes de Maio de 2020  </text> <!-- Titulo -->
+    <line x1="0" y1="400" x2="400" y2="400" style="stroke:rgb(0, 0, 0)"/> <!-- eixo x do grafico -->
+    <line x1="0" y1="400" x2="00" y2="100" style="stroke:black"  /> <!-- eixo y do grafico -->
+
+
+     <!-- Essas proximas linhas sao refentes aos riscos que indicam um passo de 10 mortos no eixo y começando em 0,10,20...300 mortos-->
     <line x1="0" y1="390" x2="350" y2="390" style="stroke:rgb(172, 164, 164)"/> <!-- 10 mortos-->
     <line x1="0" y1="380" x2="350" y2="380" style="stroke:rgb(172, 164, 164)"/> <!-- 20 mortos-->
     <line x1="0" y1="370" x2="350" y2="370" style="stroke:rgb(172, 164, 164)"/> <!-- 30 mortos-->
@@ -40,7 +42,7 @@
     <line x1="0" y1="100" x2="350" y2="100" style="stroke:rgb(172, 164, 164)"/> <!-- 300 mortos-->
     
     
-    
+    <!-- Aqui sao as linhas de refencia de mortos do eixo y, no passo de 10 mortos-->
     <line x1="0" y1="100" x2="5" y2="100" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo y-->
     <line x1="0" y1="110" x2="5" y2="110" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo y-->
     <line x1="0" y1="120" x2="5" y2="120" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo y-->
@@ -73,7 +75,7 @@
     <line x1="0" y1="390" x2="5" y2="390" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo y-->
     <line x1="0" y1="400" x2="5" y2="400" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo y-->
 
-    
+    <!--Definindo alguns para o usuario ter uma noção-->
     <text x="0" y="350">50 </text>
     <text x="0" y="300">100 </text>
     <text x="0" y="250">150 </text>
@@ -82,7 +84,7 @@
     <text x="0" y="100">300 Mortes </text>
 
 
-
+     <!-- Aqui sao as linhas de refencia de dias do eixo x , no passo de 1 dia -->
     <line x1="10" y1="400" x2="10" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
     <line x1="20" y1="400" x2="20" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
     <line x1="30" y1="400" x2="30" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
@@ -113,7 +115,8 @@
     <line x1="280" y1="400" x2="280" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
     <line x1="290" y1="400" x2="290" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
     <line x1="300" y1="400" x2="300" y2="395" style="stroke:rgb(0, 0, 0)"/> <!-- Linhas de referencia do eixo x-->
-   
+
+    <!--Definindo alguns dias para o usuario ter uma noção-->
     <text x="10" y="415">1 </text>
     <text x="50" y="415">5 </text>
     <text x="100" y="415">10 </text>
@@ -127,7 +130,8 @@
 
 
 
-
+   <!-- Aqui de fato estão os dados ja tratados pois, os dados de dia sao 1,2,3...30 coloquei com 10,20,30...30 para aumentar a escala-->
+    <!-- E os dados do eixo y referentes a quantidade de mortos diarios foi feito o seguinte y= 500-y , para que assim o grafico pudesse inciar de baixo pra cima -->
     <polyline points=" 
      10,367
      20,379
